@@ -7,7 +7,7 @@ const fonte = Righteous({
   weight: "400",
 });
 
-export default function Logo() {
+const Logo = () => {
   return (
     <Link href="/" className={`flex items-center gap-2 ${fonte.className}`}>
       <Image src="/logo.svg" width={50} height={50} alt="Logo" />
@@ -19,4 +19,6 @@ export default function Logo() {
       </h1>
     </Link>
   );
-}
+};
+
+export default Logo;

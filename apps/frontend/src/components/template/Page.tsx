@@ -1,11 +1,11 @@
 import Logo from "./Logo";
 
-export interface PaginaProps {
+export interface PageProps {
   children: React.ReactNode;
   className?: string;
 }
 
-export default function Pagina(props: PaginaProps) {
+const Page = (props: PageProps) => {
   return (
     <div
       className="
@@ -24,4 +24,6 @@ export default function Pagina(props: PaginaProps) {
       </main>
     </div>
   );
-}
+};
+
+export default Page;
